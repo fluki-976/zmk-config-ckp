@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/ext_power.h>
-#include <dt-bindings/zmk/rgb.h>            // Adjusting RGB
 #include <dt-bindings/zmk/outputs.h>        // Output over usb or bluetooth
 
 
@@ -194,11 +193,11 @@
 		};
 		config {
 			bindings = <
-				&BTCLR &BT1   &BT2   &BT3   &BT4   &BT5   &trans &trans &trans &trans &trans &trans &trans   &reset   &bootloader
-				&BLE     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans   &trans &VCCON
-				&USB      &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans    &trans     &VCCOFF
-				&trans     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans     &trans    &trans &rgb_ug RGB_OFF
-				&trans  &trans  &trans              &trans                         &trans &trans &trans &trans &trans &trans
+				&BTCLR &BT1   &BT2   &BT3   &BT4   &BT5   &trans &trans &trans &trans &trans &trans &trans   &sys_reset   &bootloader
+				&BLE     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans   &trans     &VCCON
+				&USB      &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans    &trans         &VCCOFF
+				&trans     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans     &trans    &trans     &rgb_ug RGB_OFF
+				&trans  &trans  &trans              &trans                         &trans &trans &trans &trans &trans     &trans
 			>;
 			//sensor-bindings = <&inc_dec_kp trans trans>;
 		};
