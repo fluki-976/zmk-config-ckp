@@ -200,7 +200,7 @@
 				&trans     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans     &trans    &trans &rgb_ug RGB_OFF
 				&trans  &trans  &trans              &trans                         &trans &trans &trans &trans &trans &trans
 			>;
-			sensor-bindings = <&inc_dec_kp trans trans>;
+			//sensor-bindings = <&inc_dec_kp trans trans>;
 		};
 		temp {
 			bindings = <
@@ -210,7 +210,7 @@
 				&trans     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans     &trans    &trans &trans
 				&trans  &trans  &trans              &trans                         &trans &trans &trans &trans &trans &trans
 			>;
-			sensor-bindings = <&inc_dec_kp trans trans>;
+			//sensor-bindings = <&inc_dec_kp trans trans>;
 		};
 	};
 };
