@@ -23,7 +23,7 @@
             label = "GREAT_BRITISH_POUND";
             #binding-cells = <0>;
             bindings = <&kp N4>, <&GBP>;
-            mods = <(MOD_RALT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 	};
 
